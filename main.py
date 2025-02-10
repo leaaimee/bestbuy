@@ -2,7 +2,7 @@ import store
 import products
 
 def start(store_instance):
-
+    """Runs the main menu to interact with the store"""
     def list_products()-> None:
         """Displays all products currently available in the store"""
         product_list = store_instance.get_all_products()
@@ -17,7 +17,7 @@ def start(store_instance):
     def make_order() -> None:
         """Allows the user to select products and quantities to purchase"""
         shopping_list = []
-        product_list = store_instance.get_all_products()  # This ensures product_list is defined
+        product_list = store_instance.get_all_products()
 
         for i, product in enumerate(product_list, 1):
             print(f"{i}. {product.show()}")

@@ -70,15 +70,7 @@ class Product:
 
 
 
-# def main():
-#     bose = Product("Bose QuietComfort Earbuds", price=250, quantity=500)
-#     print(bose.get_quantity())
-#     print(bose.set_quantity(50))
-#     print(bose.get_quantity())
-#     print(bose.set_quantity(-150))
-#     print(bose.get_quantity())
-#     print(bose.show())
-#     print(bose.buy(100))
-#
-# if __name__ == "__main__":
-#     main()
+def main():
+    pass
+if __name__ == "__main__":
+    main()
