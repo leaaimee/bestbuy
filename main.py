@@ -37,10 +37,8 @@ def start(store_instance):
 
                 product_list[product_index].buy(quantity)
                 shopping_list.append((product_list[product_index], quantity))
-            except ValueError as ve:
-                print(f"Error: {ve}")
-            except (IndexError, ValueError):
-                print("Invalid choice. Please try again.")
+            except (ValueError, IndexError) as error:
+                print(f"Invalid input: {error}")
 
         total_price = store_instance.order(shopping_list)
         print(f"Total order cost: ${total_price:.2f}")
